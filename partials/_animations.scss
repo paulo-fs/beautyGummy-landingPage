@@ -1,0 +1,22 @@
+
+
+@keyframes change-people{
+    0%{
+        background-image: url(img/img-people1.png);
+    }
+    20%{
+        background-image: url(img/img-people2.png);
+    }
+    40%{
+        background-image: url(img/img-people3.png);
+    }
+    60%{
+        background-image: url(img/img-people4.png);
+    }
+    80%{
+        background-image: url(img/img-people5.png);
+    }
+    100%{
+        background-image: url(img/img-people6.png);
+    }
+}

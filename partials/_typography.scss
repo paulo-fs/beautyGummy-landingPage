@@ -1,0 +1,203 @@
+//Tipografia do projeto
+
+@mixin typeface-h($size, $device: desktop) {
+  font-family: "Sora", sans-serif;
+
+  //H1
+  @if $size == h1 and $device == desktop {
+    font-size: 64px;
+    line-height: 100%;
+    padding-bottom: 16px;
+  } @else if $size == h1 and $device == mobile {
+    font-size: 36px;
+    line-height: 120%;
+  }
+
+  //H2
+  @if $size == h2 and $device == desktop {
+    font-size: 48px;
+    line-height: 110%;
+    padding-bottom: 16px;
+  } @else if $size == h2 and $device == mobile {
+    font-size: 24px;
+    line-height: 120%;
+  }
+
+  //H3
+  @if $size == h3 and $device == desktop {
+    font-size: 36px;
+    line-height: 120%;
+    padding-bottom: 16px;
+  } @else if $size == h3 and $device == mobile {
+    font-size: 24px;
+    line-height: 120%;
+  }
+
+  //H4
+  @if $size == h4 and $device == desktop {
+    font-size: 24px;
+    line-height: 130%;
+  } @else if $size == h4 and $device == mobile {
+    font-size: 18px;
+    line-height: 130%;
+  }
+
+  //H5
+  @if $size == h5 and $device == desktop {
+    font-size: 18px;
+    line-height: 140%;
+  } @else if $size == h5 and $device == mobile {
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+
+@mixin typeface-p($size: p2, $device: desktop) {
+  font-family: "Noto Sans", sans-serif;
+
+  //P1
+  @if $size == p1 and $device == desktop {
+    font-size: 24px;
+    line-height: 130%;
+  } @else if $size == p1 and $device == mobile {
+    font-size: 18px;
+    line-height: 130%;
+  }
+
+  //P2
+  @if $size == p2 and $device == desktop {
+    font-size: 16px;
+    line-height: 160%;
+  } @else if $size == p2 and $device == mobile {
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  //P3
+  @if $size == p3 and $device == desktop {
+    font-size: 14px;
+    line-height: 140%;
+  } @else if $size == p3 and $device == mobile {
+    font-size: 14px;
+    line-height: 140%;
+  }
+}
+
+h1 {
+  color: $purple-dark;
+  @include typeface-h(h1, desktop);
+
+  @include responsive(s) {
+    @include typeface-h(h1, mobile);
+  }
+}
+
+h2 {
+  color: $purple-dark;
+  @include typeface-h(h2, desktop);
+
+  @include responsive(s) {
+    @include typeface-h(h2, mobile);
+  }
+}
+
+.h2-center {
+  color: $purple-dark;
+  text-align: center;
+  @include typeface-h(h2, desktop);
+
+  @include responsive(s) {
+    @include typeface-h(h2, mobile);
+  }
+}
+
+h3 {
+  color: $purple-dark;
+  @include typeface-h(h3, desktop);
+
+  @include responsive(s) {
+    @include typeface-h(h3, mobile);
+  }
+}
+
+h4 {
+  color: $purple-dark;
+  @include typeface-h(h4, desktop);
+
+  @include responsive(s) {
+    @include typeface-h(h4, mobile);
+  }
+}
+
+h5 {
+  color: $purple-dark;
+  @include typeface-h(h5, desktop);
+
+  @include responsive(s) {
+    @include typeface-h(h5, mobile);
+  }
+}
+
+p {
+  color: $black;
+
+  @include typeface-p(p2, desktopo);
+
+  @include responsive(s) {
+    @include typeface-p(p2, mobile);
+  }
+}
+
+.bold {
+  font-weight: bold;
+  color: $black-light;
+}
+
+strong {
+  color: $black-dark;
+  @include typeface-p(p2, desktop);
+
+  @include responsive(s) {
+    @include typeface-p(p2, mobile);
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-white{
+  color: $white-light;
+}
+
+.text-white-dark{
+  color: $white-dark;
+}
+
+.text-white-light{
+  color: $white-light;
+}
+
+.text-black{
+  color: $black;
+}
+
+.text-green-light{
+  color: $green-light;
+}
+
+.text-black-light{
+  color: $black-light;
+}
+
+.text-center{
+  text-align: center;
+}
+
+ul{
+  @include typeface-p(p2, desktopo);
+
+  @include responsive(s) {
+    @include typeface-p(p2, mobile);
+  }
+}

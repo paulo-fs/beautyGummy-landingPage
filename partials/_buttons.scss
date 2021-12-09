@@ -1,0 +1,97 @@
+a {
+  @include typeface-p(p2, desktop);
+  text-decoration: none;
+  color: $black;
+  transition: 0.5s ease;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.btn {
+  background-color: $purple-dark;
+  padding: 16px 56px;
+  color: $white-light;
+  border: none;
+
+  box-shadow: 0px 3px 10px rgba(93, 71, 114, 0.2);
+  border-radius: 6px;
+
+  transition: 0.3s ease;
+
+  &:hover {
+    background-color: $purple2-light;
+    box-shadow: 0px 5px 16px rgba(93, 71, 114, 0.1);
+  }
+}
+
+.btn-white {
+  background-color: $white;
+  padding: 16px 56px;
+  color: $purple-dark;
+  border: none;
+
+  box-shadow: 0px 3px 10px rgba(93, 71, 114, 0.2);
+  border-radius: 6px;
+
+  transition: 0.3s ease;
+
+  &:hover {
+    background-color: $purple2-light;
+    box-shadow: 0px 5px 16px rgba(93, 71, 114, 0.1);
+  }
+}
+
+.btn-terciary-white {
+  background-color: rgba($purple-dark, 0);
+  padding: 12px 56px;
+  color: $white-light;
+  border: 1px solid $white-light;
+
+  border-radius: 6px;
+
+  transition: 0.3s ease;
+
+  &:hover {
+    background-color: $purple2-light;
+    box-shadow: 0px 5px 16px rgba(93, 71, 114, 0.1);
+  }
+}
+
+
+.link-white{
+  color: $white;
+  border-bottom: 2px solid rgba($purple2-light, 0);
+  padding: 12px 8px 2px 8px;
+
+  position: relative;
+
+  &::before{
+    content: "";
+
+    position: absolute;
+    top: 2.5rem;
+
+    border-bottom: 2px solid $purple2-light;
+    width: 0%;
+
+    transition: .3s;
+
+    &:hover{
+      border-bottom: 2px solid $purple2-light;
+      width: 100%;
+    }
+    
+  }
+
+  transition: .3s;
+
+  &:hover{
+    color: $purple2-light;
+
+    &::before{
+      width: 85%;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+$container-xl: 1440px;
+$container-l: 1140px;
+$container-m: 960px;
+$container-s: 450px;
+
+$container: 1200px;
+$container-100: 100%;
+$gutter: 24px;
+
+@mixin responsive($device) {
+  // resolução maior que 1440px
+  @if $device == xl {
+    @media screen and (min-width: $container-xl) {
+      @content;
+    }
+    // resolução entre 1140px and 1440px
+  } @else if $device == l {
+    @media screen and (max-width: $container-xl) and (min-width: $container-l) {
+      @content;
+    }
+    // resolução entre 960px e 1140px
+  } @else if $device == m {
+    @media screen and (max-width: $container-l) and (min-width: $container-m) {
+      @content;
+    }
+    // resolução menor que 960px
+  } @else if $device == s {
+    @media screen and (max-width: $container-m) {
+      @content;
+    }
+    // resolução menor que 540px
+  } @else if $device == xs {
+    @media screen and (max-width: $container-s) {
+      @content;
+    }
+  }
+}
+
+@function grid($col, $total: 12) {
+  @return ($col / $total) * 100%;
+}
+
+//estrutura de repetição que criará os 12 grids
+@for $i from 1 through 12 {
+  .grid-#{$i} {
+    width: calc(#{grid($i)} - #{$gutter});
+    margin: 0 ($gutter / 2);
+    float: left;
+
+    @include responsive(s) {
+      width: calc(100% - #{$gutter});
+      margin: 0 ($gutter / 2);
+      float: none;
+    }
+  }
+}
+
+.container-100 {
+  width: $container-100;
+  padding: 8px 24px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: $container-l;
+  margin: 0 auto;
+  padding: 8px 24px;
+
+  //clearfix
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
