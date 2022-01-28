@@ -72,5 +72,13 @@ $gutter: 24px;
     display: table;
     clear: both;
   }
+
+  @include responsive(s){
+    padding: .5rem 0rem;
+  }
+
+  @include responsive(xs){
+    padding: .5rem 0rem;
+  }
 }
 

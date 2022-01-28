@@ -179,6 +179,16 @@
   display: table;
   clear: both;
 }
+@media screen and (max-width: 960px) {
+  .container {
+    padding: 0.5rem 0rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .container {
+    padding: 0.5rem 0rem;
+  }
+}
 
 .flex {
   display: flex;
@@ -263,12 +273,14 @@ section#beneficios .img-people .people1 {
   width: 100%;
   height: 100%;
   background-size: contain;
+  background-repeat: no-repeat;
   animation: change-people 16s infinite alternate-reverse;
 }
 section#beneficios .img-people .people2 {
   width: 100%;
   height: 100%;
   background-size: contain;
+  background-repeat: no-repeat;
   -webkit-animation: change-people 20s infinite forwards;
           animation: change-people 20s infinite forwards;
 }
@@ -276,6 +288,7 @@ section#beneficios .img-people .people3 {
   width: 100%;
   height: 100%;
   background-size: contain;
+  background-repeat: no-repeat;
   -webkit-animation: change-people 18s infinite alternate;
           animation: change-people 18s infinite alternate;
 }
@@ -290,11 +303,21 @@ section#beneficios .img-people .people3 {
   }
   section#beneficios div.grid-5 .img-people {
     display: flex;
-    width: 19rem;
-    height: 19rem;
+    width: 21rem;
+    height: 21rem;
     justify-content: center;
     align-items: center;
-    margin: 16px auto;
+    margin: 1rem auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  section#beneficios div.grid-5 .img-people {
+    display: flex;
+    width: 10rem;
+    height: 10rem;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
   }
 }
 
@@ -343,6 +366,34 @@ section#comprar div.h2 {
   section#comprar .card .img {
     display: grid;
     place-content: center;
+  }
+  section#comprar .text {
+    margin: 32px 0 80px 0;
+  }
+  section#comprar .bigger {
+    margin-bottom: 0px;
+    display: grid;
+    place-content: center;
+  }
+}
+@media screen and (max-width: 450px) {
+  section#comprar {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  section#comprar .card {
+    max-width: 250px;
+    align-self: center;
+    margin: 0 auto;
+  }
+  section#comprar .card .purple {
+    z-index: 2;
+  }
+  section#comprar .card .img {
+    display: grid;
+    place-content: center;
+    max-height: 200px;
+    z-index: 1;
   }
   section#comprar .text {
     margin: 32px 0 80px 0;
