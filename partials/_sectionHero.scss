@@ -1,0 +1,71 @@
+section#hero{
+  margin-top: 0;
+
+  background-color: $purple-dark;
+
+  .text{
+      margin-top: .5rem;
+      font-size: 1.2rem;
+      line-height: 150%;
+  }
+
+  .hero-btn {
+      display: flex;
+      gap: 3rem;
+      flex-wrap: wrap;
+
+  }
+
+  .img-hero{
+      padding: 0 3rem;
+
+     .img{
+         display: flex;
+         justify-content: center;
+
+         width: 100%;
+         height: 36rem;
+         background-color: $white;
+         border-radius: 8px;
+
+         background-image: url('/img/gummy-gominhas-1.jpg');
+         background-position: top -17rem left -5rem;
+         background-repeat: no-repeat;
+         background-size: 175%;
+
+         transition: .3s;
+         &:hover{
+             transform: scale(1.05);
+         }
+
+     }
+  }
+
+  @include responsive(s){
+
+      padding-top: 40px;
+
+      .container:only-child{
+          width: 100%;
+          display: flex;
+          flex-direction:column-reverse;
+      }
+
+      .img-hero{
+          display: flex;
+          justify-content: center;
+          .img{
+              width: 15rem;
+              height: 17rem;
+              margin-bottom: 2rem;
+          }
+      }
+
+      .hero-btn{
+          display: flex;
+          gap: 3rem;
+      }
+      
+  }
+
+}

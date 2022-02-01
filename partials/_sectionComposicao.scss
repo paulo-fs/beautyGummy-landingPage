@@ -1,0 +1,71 @@
+section#composicao{
+
+  padding-top: 8px;
+  padding-bottom: 40px;
+
+  background-color: $purple-dark;
+  border-bottom: 1px solid $green-light;
+
+
+
+  //responsive start
+  @include responsive(s){
+      
+      div.grid-3 {
+          display: none;
+      }
+
+      div.container-100:nth-child(n){
+          flex-direction: column-reverse;
+      }
+
+      div.card-big{
+          margin: 40px auto;
+
+          min-height: 10rem;
+          max-height: 25rem;
+
+          max-width: 25rem;
+      }
+
+  }
+  //responsive end
+
+
+  .bloco-comp{
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      .bloco-comp-item{
+          display: flex;
+          gap: 16px;
+      }
+  }
+
+  .card-big{
+      background-color: $white;
+      border-radius: 6px;
+
+      box-shadow: 0px 15px 15px rgba($purple-dark, 0.08);
+
+      width: 100%;
+      height: 30rem;
+  }
+
+  .cards{
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+
+      .card-small{
+          background-color: $white;
+          border-radius: 6px;
+
+          box-shadow: 0px 15px 15px rgba($purple-dark, 0.08);
+
+          width: 100%;
+          height: 15rem;
+      }
+  }    
+}

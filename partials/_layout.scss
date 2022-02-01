@@ -25,430 +25,475 @@
 }
 
 
-section#hero{
-    margin-top: 0;
+// section#hero{
+//     margin-top: 0;
 
-    background-color: $purple-dark;
+//     background-color: $purple-dark;
 
-    .hero-btn {
-        display: flex;
-        gap: 3rem;
-        flex-wrap: wrap;
+//     .hero-btn {
+//         display: flex;
+//         gap: 3rem;
+//         flex-wrap: wrap;
 
-    }
+//     }
 
-    .img-hero{
-        padding: 0 4rem;
+//     .img-hero{
+//         padding: 0 4rem;
 
-       .img{
-           display: flex;
-           justify-content: center;
+//        .img{
+//            display: flex;
+//            justify-content: center;
 
-           width: 22rem;
-           height: 26rem;
-           background-color: $white;
-           border-radius: 8px;
+//            width: 22rem;
+//            height: 26rem;
+//            background-color: $white;
+//            border-radius: 8px;
 
-           transition: .3s;
-           &:hover{
-               transform: scale(1.05);
-           }
+//            transition: .3s;
+//            &:hover{
+//                transform: scale(1.05);
+//            }
 
-       }
-    }
+//        }
+//     }
 
-    @include responsive(s){
+//     @include responsive(s){
 
-        padding-top: 40px;
+//         padding-top: 40px;
 
-        .container:only-child{
-            width: 100%;
-            display: flex;
-            flex-direction:column-reverse;
-        }
+//         .container:only-child{
+//             width: 100%;
+//             display: flex;
+//             flex-direction:column-reverse;
+//         }
 
-        .img-hero{
-            display: flex;
-            justify-content: center;
-            .img{
-                width: 15rem;
-                height: 17rem;
-                margin-bottom: 2rem;
-            }
-        }
+//         .img-hero{
+//             display: flex;
+//             justify-content: center;
+//             .img{
+//                 width: 15rem;
+//                 height: 17rem;
+//                 margin-bottom: 2rem;
+//             }
+//         }
 
-        .hero-btn{
-            display: flex;
-            gap: 3rem;
-        }
+//         .hero-btn{
+//             display: flex;
+//             gap: 3rem;
+//         }
         
-    }
+//     }
 
-}
+// }
 
 
 
-section#beneficios{
-    background-color: $green-light;
+// section#beneficios{
+//     background-color: $green-light;
 
-    .img-people{
-        width: 19rem;
-        height: 19rem;
+//     .img-people{
+//         width: 19rem;
+//         height: 19rem;
 
-        box-shadow: 0px 15px 35px rgba($green-dark, 0.2);
+//         box-shadow: 0px 15px 35px rgba($green-dark, 0.2);
 
-        // background-image: url(img/img-people1.png);
+//         // background-image: url(img/img-people1.png);
         
 
-        .people1{
-            width: 100%;
-            height: 100%;
-            background-size: contain;
-            background-repeat: no-repeat;
-            animation: change-people 16s infinite alternate-reverse;
-        }
-        .people2{
-            width: 100%;
-            height: 100%;
-            background-size: contain;
-            background-repeat: no-repeat;
-            animation: change-people 20s infinite forwards;
-        }
-        .people3{
-            width: 100%;
-            height: 100%;
-            background-size: contain;
-            background-repeat: no-repeat;
-            animation: change-people 18s infinite alternate;
-        }
-    }
+//         .people1{
+//             width: 100%;
+//             height: 100%;
+//             background-size: contain;
+//             background-repeat: no-repeat;
+//             animation: change-people 16s infinite alternate-reverse;
+//         }
+//         .people2{
+//             width: 100%;
+//             height: 100%;
+//             background-size: contain;
+//             background-repeat: no-repeat;
+//             animation: change-people 20s infinite forwards;
+//         }
+//         .people3{
+//             width: 100%;
+//             height: 100%;
+//             background-size: contain;
+//             background-repeat: no-repeat;
+//             animation: change-people 18s infinite alternate;
+//         }
+//     }
 
-    @include responsive(s){
+//     @include responsive(s){
 
-        padding-top: 8px;
-        padding-bottom: 32px;
+//         padding-top: 8px;
+//         padding-bottom: 32px;
 
-        div.container-100:nth-child(2n){
-            display: flex;
+//         div.container-100:nth-child(2n){
+//             display: flex;
             
-            flex-direction: column-reverse;
+//             flex-direction: column-reverse;
             
-        }
+//         }
 
 
-        div.grid-5 .img-people{
-            display: flex;
-            width: 21rem;
-            height: 21rem;
-            justify-content: center;
-            align-items: center;
-            margin: 1rem auto;
+//         div.grid-5 .img-people{
+//             display: flex;
+//             width: 21rem;
+//             height: 21rem;
+//             justify-content: center;
+//             align-items: center;
+//             margin: 1rem auto;
 
-        }
+//         }
         
-    }
+//     }
 
-    @include responsive(xs){
-        div.grid-5 .img-people{
-            display: flex;
-            width: 10rem;
-            height: 10rem;
-            justify-content: center;
-            align-items: center;
-            margin: 1rem auto;
+//     @include responsive(xs){
+//         div.grid-5 .img-people{
+//             display: flex;
+//             width: 15rem;
+//             height: 15rem;
+//             justify-content: center;
+//             align-items: center;
+//             margin: 1rem auto;
 
-        }
-    }
+//         }
+//     }
 
-}
-
-
+// }
 
 
-section#beneficio-icones{
-    background-color: $purple-dark;
-
-    ul{
-        list-style: none;
-
-        display: flex;
-        gap: 80px;
-        justify-content: space-between;
-        align-items: center;
-
-        li{
-            font-size: 500%;
-            color: $white;        
-        }
-    }
-
-    @include responsive(s){
-
-        padding-top: 64px;
-        padding-bottom: 64px;
-
-        ul{
-            display: flex;
-            gap: 24px;
-
-            li{
-                font-size: 400%;
-            }
-        }
-    }
-
-}
-
-section#comprar {
-
-    div.h2{
-        text-align: center;
-        align-self: center;
-    }
-
-//responsive start
-    @include responsive(s){
-
-        padding-top: 24px;
-        padding-bottom: 24px;
-
-        .card{
-            max-width: 280px;
-            align-self: center;
-
-            margin: 0 auto;
-
-            .img{
-                display: grid;
-                place-content: center;
-            }
-        }
-
-        .text{
-            margin: 32px 0 80px 0;
-        }
-
-        .bigger{
-            margin-bottom: -0px;
-            display: grid;
-            place-content: center;
-        }
-
-    }
-
-    @include responsive(xs){
-        padding-top: 24px;
-        padding-bottom: 24px;
-
-        .card{
-            max-width: 250px;
-            align-self: center;
-
-            margin: 0 auto;
-
-            .purple{
-                z-index: 2;
-            }
-
-            .img{
-                display: grid;
-                place-content: center;
-                max-height: 200px;
-                z-index: 1;
-            }
-        }
-
-        .text{
-            margin: 32px 0 80px 0;
-        }
-
-        .bigger{
-            margin-bottom: -0px;
-            display: grid;
-            place-content: center;
-        }
-    }
-//responsive end
 
 
-    .cards{
-        display: flex;
-        align-items: center;
-    }
+// section#beneficio-icones{
+//     background-color: $purple-dark;
 
-    .card{
-        width: 100%;
+//     ul{
+//         list-style: none;
 
-        transition: .3s;
-        &:hover{
-                opacity: .90;
-            }
+//         display: flex;
+//         gap: 80px;
+//         justify-content: space-between;
+//         align-items: center;
 
-        .purple{
-            background-color: $purple-dark;
-            text-align: center;
-            border-radius: 6px 6px 0px 0px;
-            padding: 8px;
+//         li{
+//             font-size: 500%;
+//             color: $white;        
+//         }
+//     }
 
-            display: flex;
-            justify-content: space-between;
-            padding-right: 24px;
-            padding-left: 24px;
-        }
+//     @include responsive(s){
 
-        .purple-light{
-            background-color: $purple;
-            text-align: center;
-            border-radius: 6px 6px 0px 0px;
-            padding: 8px;
+//         padding-top: 64px;
+//         padding-bottom: 64px;
 
-            display: flex;
-            justify-content: space-between;
-            padding-right: 24px;
-            padding-left: 24px;
-        }
+//         ul{
+//             display: flex;
+//             gap: 20px;
 
-        .img{
-            height: 325px;
-            background-color: white;
-            border-radius: 0px 0px 6px 6px;
+//             li{
+//                 font-size: 350%;
+//             }
+//         }
+//     }
 
-            box-shadow: 0px 15px 15px rgba($purple-dark, 0.08);
+// }
+
+
+// section#comprar {
+
+// //responsive start
+//     @include responsive(s){
+
+//         padding: 0 1.5rem;
+
+
+//         .card{
+//             max-width: 420px;
+//             margin: 0 auto;
+//             padding: 0;
+
+//             .purple-light{
+//                 height: 5.5rem;
+//             }
+//         }
+
+//         .text{
+//             text-align: center;
+//             padding: 0;
+
+//             .tratamento{
+//                 margin-bottom: 1rem;
+//             }
             
-            img{
-                width: 100%;                
-            }
-        }
+//             .infos{
+//                 display: none;
+//             }
+//         }
 
-        .bigger{
-            height: 380px;
-        }
+//         .bigger{
+//             margin-bottom: -0px;
+//             display: grid;
+//             place-content: center;
+//         }
 
-        .text{
-            text-align: center;
-            width: 100%;
+//     }
 
-            .tratamento, .avista{
-                font-size: 0.8rem;
-                margin-bottom: 16px;
-            }
+//     @include responsive(xs){
 
-        }
+//         .grid-12{
+//             margin-bottom: -3rem;
+//             margin-top: -1rem;
+//         }
+
+//         .cards, .container-100{
+//             padding: 0;
+//         }
+
+//         .grid-6{
+//             margin-bottom: -3rem;
+//             padding: 1rem 0;
+//         }
+
+//         .card{
+//             max-width: 420px;
+//             margin: 0;
+//             padding: 0;
+
+//             .purple-light{
+//                 height: 6rem;
+//                 z-index: 2;
+//             }
+
+//             .img{
+//                 max-height: 200px;
+//                 z-index: 1;
+//             }
+
+//             .bigger{
+//                 margin-bottom: -0px;
+//                 display: grid;
+//                 place-content: center;
+//             }
+
+//             .text{
+//                 margin: 0 0 -1rem 0;
+//                 text-align: center;
+
+//             }
+//         }
 
         
-    }
-}
 
-section#composicao{
-
-    padding-top: 8px;
-    padding-bottom: 40px;
-
-    background-color: $purple-dark;
-    border-bottom: 1px solid $green-light;
-
-
-
-    //responsive start
-    @include responsive(s){
         
-        div.grid-3 {
-            display: none;
-        }
-
-        div.container-100:nth-child(n){
-            flex-direction: column-reverse;
-        }
-
-        div.card-big{
-            margin: 40px auto;
-
-            min-height: 10rem;
-            max-height: 25rem;
-
-            max-width: 25rem;
-        }
-
-    }
-    //responsive end
+//     }
+// //responsive end
 
 
-    .bloco-comp{
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
 
-        .bloco-comp-item{
-            display: flex;
-            gap: 16px;
-        }
-    }
+//     .card{
+//         width: 100%;
+//         padding: 1rem 1rem 6rem 1rem;
 
-    .card-big{
-        background-color: $white;
-        border-radius: 6px;
-
-        box-shadow: 0px 15px 15px rgba($purple-dark, 0.08);
-
-        width: 100%;
-        height: 30rem;
-    }
-
-    .cards{
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-
-        .card-small{
-            background-color: $white;
-            border-radius: 6px;
-
-            box-shadow: 0px 15px 15px rgba($purple-dark, 0.08);
-
-            width: 100%;
-            height: 15rem;
-        }
-    }    
-}
+//         transition: .3s;
+//         &:hover{
+//                 opacity: .90;
+//             }
 
 
-section#footer{
-    background-color: $purple-dark;
+//         .purple-light{
+//             background-color: $purple;
+//             text-align: center;
+//             border-radius: 6px 6px 0px 0px;
+//             padding: 8px;
 
-    //responsive start
-    @include responsive(s){
-        padding-top: 0;
+//             padding-right: 24px;
+//             padding-left: 24px;
+//         }
 
-        div ul{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
+//         .img{
+//             height: 325px;
+//             background-color: white;
+//             border-radius: 0px 0px 6px 6px;
 
-            margin-top: 24px;
-            gap: 24px;
-        }
+//             box-shadow: 0px 15px 15px rgba($purple-dark, 0.08);
+            
+//             img{
+//                 width: 100%;
+//             }
+//         }
 
-        div.qualifarma, div.sessoes {
-            display: none;
-        }
+//         .bigger{
+//             height: 380px;
+//         }
 
-    }
-    //responsive end
+//         .text{
+//             text-align: left;
+//             width: 100%;
+//             padding: 0 2rem;
 
-    .qualifarma, .sessoes, .social-media, ul{
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-    }
+//             .tratamento{
+//                 font-size: 1.3rem;
+//                 margin-bottom: 4rem;
+//             }
 
-    .border-bottom{
-        border-bottom: 1px solid $green-light;
-    }
+//             .infos{
+//                 font-size: 1.2rem;
+//                 margin-bottom: 4rem;
+//             }
 
-    ul{
-        list-style: none;
-    }
+//             .parcelado{
+//                 font-size: 1.6rem;
+//                 color: $green;
+//                 margin-bottom: .5rem;
+//             }
+
+//             .avista{
+//                 margin-bottom: 1rem;
+//             }
+
+//             .btn-100 {
+//                 background-color: $purple-dark;
+//                 padding: 16px 56px;
+//                 color: $white-light;
+//                 border: none;
+
+//                 width: 100%;
+//                 cursor: pointer;
+              
+//                 box-shadow: 0px 3px 10px rgba(93, 71, 114, 0.2);
+//                 border-radius: 6px;
+              
+//                 transition: 0.3s ease;
+              
+//                 &:hover {
+//                   background-color: $purple2-light;
+//                   box-shadow: 0px 5px 16px rgba(93, 71, 114, 0.1);
+//                 }
+//               }
+
+//         }
+
+        
+//     }
+// }
+
+// section#composicao{
+
+//     padding-top: 8px;
+//     padding-bottom: 40px;
+
+//     background-color: $purple-dark;
+//     border-bottom: 1px solid $green-light;
+
+
+
+//     //responsive start
+//     @include responsive(s){
+        
+//         div.grid-3 {
+//             display: none;
+//         }
+
+//         div.container-100:nth-child(n){
+//             flex-direction: column-reverse;
+//         }
+
+//         div.card-big{
+//             margin: 40px auto;
+
+//             min-height: 10rem;
+//             max-height: 25rem;
+
+//             max-width: 25rem;
+//         }
+
+//     }
+//     //responsive end
+
+
+//     .bloco-comp{
+//         display: flex;
+//         flex-direction: column;
+//         gap: 24px;
+
+//         .bloco-comp-item{
+//             display: flex;
+//             gap: 16px;
+//         }
+//     }
+
+//     .card-big{
+//         background-color: $white;
+//         border-radius: 6px;
+
+//         box-shadow: 0px 15px 15px rgba($purple-dark, 0.08);
+
+//         width: 100%;
+//         height: 30rem;
+//     }
+
+//     .cards{
+//         display: flex;
+//         flex-direction: column;
+//         gap: 32px;
+
+//         .card-small{
+//             background-color: $white;
+//             border-radius: 6px;
+
+//             box-shadow: 0px 15px 15px rgba($purple-dark, 0.08);
+
+//             width: 100%;
+//             height: 15rem;
+//         }
+//     }    
+// }
+
+
+// section#footer{
+//     background-color: $purple-dark;
+
+//     //responsive start
+//     @include responsive(s){
+//         padding-top: 0;
+
+//         .social-media ul{
+//             display: flex;
+//             flex-direction: column;
+//             flex-wrap: wrap;
+
+//             margin-top: 24px;
+//             gap: 24px;
+//         }
+
+//         div.qualifarma, div.sessoes {
+//             display: none;
+//         }
+
+//         .text-center, .infos{
+//             display: flex;
+//             flex-direction: column;
+//             gap: 1rem;
+
+//             text-align: left;
+//         }
+
+//     }
+//     //responsive end
+
+//     .qualifarma, .sessoes, .social-media, ul{
+//         display: flex;
+//         flex-direction: column;
+//         gap: 12px;
+//     }
+
+//     .border-bottom{
+//         border-bottom: 1px solid $green-light;
+//     }
+
+//     ul{
+//         list-style: none;
+//     }
     
-}
+// }

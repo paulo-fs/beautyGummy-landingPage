@@ -1,0 +1,72 @@
+section#beneficios{
+  background-color: $green-light;
+
+  .img-people{
+      width: 19rem;
+      height: 19rem;
+
+      box-shadow: 0px 15px 35px rgba($green-dark, 0.2);
+
+      .people1{
+          width: 100%;
+          height: 100%;
+          background-size: contain;
+          background-repeat: no-repeat;
+          animation: change-people 16s infinite alternate-reverse;
+      }
+      .people2{
+          width: 100%;
+          height: 100%;
+          background-size: contain;
+          background-repeat: no-repeat;
+          animation: change-people 20s infinite forwards;
+      }
+      .people3{
+          width: 100%;
+          height: 100%;
+          background-size: contain;
+          background-repeat: no-repeat;
+          animation: change-people 18s infinite alternate;
+      }
+
+  }
+
+  @include responsive(s){
+
+      padding-top: 8px;
+      padding-bottom: 32px;
+
+      div.container-100:nth-child(2n){
+          display: flex;
+          
+          flex-direction: column-reverse;
+          
+      }
+
+
+      div.grid-5 .img-people{
+          display: flex;
+          width: 21rem;
+          height: 21rem;
+          justify-content: center;
+          align-items: center;
+          margin: 1rem auto;
+
+      }
+      
+  }
+
+  @include responsive(xs){
+      div.grid-5 .img-people{
+          display: flex;
+          width: 15rem;
+          height: 15rem;
+          justify-content: center;
+          align-items: center;
+          margin: 1rem auto;
+
+      }
+  }
+
+}
+

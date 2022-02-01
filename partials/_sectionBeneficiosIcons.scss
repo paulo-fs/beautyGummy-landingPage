@@ -1,0 +1,33 @@
+section#beneficio-icones{
+  background-color: $purple-dark;
+
+  ul{
+      list-style: none;
+
+      display: flex;
+      gap: 80px;
+      justify-content: space-between;
+      align-items: center;
+
+      li{
+          font-size: 500%;
+          color: $white;        
+      }
+  }
+
+  @include responsive(s){
+
+      padding-top: 64px;
+      padding-bottom: 64px;
+
+      ul{
+          display: flex;
+          gap: 20px;
+
+          li{
+              font-size: 350%;
+          }
+      }
+  }
+
+}

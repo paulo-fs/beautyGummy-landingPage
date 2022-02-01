@@ -1,0 +1,177 @@
+section#comprar {
+
+  //responsive start
+      @include responsive(s){
+  
+          padding: 0 1.5rem;
+  
+  
+          .card{
+              max-width: 420px;
+              margin: 0 auto;
+              padding: 0;
+  
+              .purple-light{
+                  height: 5.5rem;
+              }
+          }
+  
+          .text{
+              text-align: center;
+              padding: 0;
+  
+              .tratamento{
+                  margin-bottom: 1rem;
+              }
+              
+              .infos{
+                  display: none;
+              }
+          }
+  
+          .bigger{
+              margin-bottom: -0px;
+              display: grid;
+              place-content: center;
+          }
+  
+      }
+  
+      @include responsive(xs){
+  
+          .grid-12{
+              margin-bottom: -3rem;
+              margin-top: -1rem;
+          }
+  
+          .cards, .container-100{
+              padding: 0;
+          }
+  
+          .grid-6{
+              margin-bottom: -3rem;
+              padding: 1rem 0;
+          }
+  
+          .card{
+              max-width: 420px;
+              margin: 0;
+              padding: 0;
+  
+              .purple-light{
+                  height: 6rem;
+                  z-index: 2;
+              }
+  
+              .img{
+                  max-height: 200px;
+                  z-index: 1;
+              }
+  
+              .bigger{
+                  margin-bottom: -0px;
+                  display: grid;
+                  place-content: center;
+              }
+  
+              .text{
+                  margin: 0 0 -1rem 0;
+                  text-align: center;
+  
+              }
+          }
+  
+          
+  
+          
+      }
+  //responsive end
+  
+  
+  
+      .card{
+          width: 100%;
+          padding: 1rem 1rem 6rem 1rem;
+  
+          transition: .3s;
+          &:hover{
+                  opacity: .90;
+              }
+  
+  
+          .purple-light{
+              background-color: $purple-dark;
+              text-align: center;
+              border-radius: 6px 6px 0px 0px;
+              padding: 8px;
+  
+              padding-right: 24px;
+              padding-left: 24px;
+          }
+  
+          .img{
+              height: 325px;
+              background-color: white;
+              border-radius: 0px 0px 6px 6px;
+  
+              box-shadow: 0px 15px 15px rgba($purple-dark, 0.08);
+              
+              img{
+                  width: 100%;
+              }
+          }
+  
+          .bigger{
+              height: 380px;
+          }
+  
+          .text{
+              text-align: left;
+              width: 100%;
+              padding: 0 2rem;
+  
+              .tratamento{
+                  font-size: 1.3rem;
+                  margin-bottom: 4rem;
+              }
+  
+              .infos{
+                  font-size: 1.2rem;
+                  margin-bottom: 4rem;
+              }
+  
+              .parcelado{
+                  font-size: 1.6rem;
+                  color: $green;
+                  margin-bottom: .5rem;
+              }
+  
+              .avista{
+                  margin-bottom: 1rem;
+              }
+  
+              .btn-100 {
+                  background-color: $purple-dark;
+                  padding: 16px 56px;
+                  color: $white-light;
+                  border: none;
+  
+                  width: 100%;
+                  cursor: pointer;
+                
+                  box-shadow: 0px 3px 10px rgba(93, 71, 114, 0.2);
+                  border-radius: 6px;
+                
+                  transition: 0.3s ease;
+                
+                  &:hover {
+                    background-color: $purple2-light;
+                    box-shadow: 0px 5px 16px rgba(93, 71, 114, 0.1);
+                  }
+                }
+  
+          }
+  
+          
+      }
+  }

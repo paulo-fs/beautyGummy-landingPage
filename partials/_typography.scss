@@ -58,10 +58,10 @@
   //P1
   @if $size == p1 and $device == desktop {
     font-size: 24px;
-    line-height: 130%;
+    line-height: 140%;
   } @else if $size == p1 and $device == mobile {
     font-size: 18px;
-    line-height: 130%;
+    line-height: 140%;
   }
 
   //P2
