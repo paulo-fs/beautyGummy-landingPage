@@ -11,7 +11,7 @@ a {
 
 .btn {
   background-color: $purple-dark;
-  padding: 16px 56px;
+  padding: 16px 48px;
   color: $white-light;
   border: none;
 
@@ -26,6 +26,22 @@ a {
   }
 }
 
+.btn-secondary {
+  background-color: rgba($purple2, 0);
+  padding: 16px 48px;
+  color: $purple2;
+  border: 1px solid $purple2-light;
+
+  border-radius: 6px;
+
+  transition: 0.3s ease;
+
+  &:hover {
+    background-color: $purple2-light;
+    box-shadow: 0px 5px 16px rgba(93, 71, 114, 0.1);
+    color: $white;
+  }
+}
 
 
 .btn-white {
@@ -64,6 +80,42 @@ a {
 
 .link-white{
   color: $white;
+  border-bottom: 2px solid rgba($purple2-light, 0);
+  padding: 12px 8px 2px 8px;
+
+  position: relative;
+
+  &::before{
+    content: "";
+
+    position: absolute;
+    top: 2.5rem;
+
+    border-bottom: 2px solid $purple2-light;
+    width: 0%;
+
+    transition: .3s;
+
+    &:hover{
+      border-bottom: 2px solid $purple2-light;
+      width: 100%;
+    }
+    
+  }
+
+  transition: .3s;
+
+  &:hover{
+    color: $purple2-light;
+
+    &::before{
+      width: 85%;
+    }
+  }
+}
+
+.link-secondary{
+  color: $purple2;
   border-bottom: 2px solid rgba($purple2-light, 0);
   padding: 12px 8px 2px 8px;
 
