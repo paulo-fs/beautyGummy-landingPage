@@ -21,4 +21,36 @@
     }
 }
 
-@keyframes comprar-animation{};
+
+@keyframes beneficios-card-small{
+    0%{
+        background-image: url(img/gummy-gominhas-close.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    20%{
+        background-image: url(img/img-people2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    40%{
+        background-image: url(img/img-people3.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    60%{
+        background-image: url(img/gummy-gominhas-close.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    80%{
+        background-image: url(img/img-people5.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    100%{
+        background-image: url(img/img-people6.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
