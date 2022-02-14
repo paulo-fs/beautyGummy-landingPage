@@ -2,6 +2,9 @@ section#hero{
   margin-top: 0;
 
   background-color: $white-light;
+  h1{
+      z-index: 2;
+  }
 
   .text{
       margin-top: .5rem;
@@ -59,7 +62,7 @@ section#hero{
           .img{
               width: 15rem;
               height: 22rem;
-              margin-bottom: -4rem;
+              margin-bottom: -1rem;
               background-position: top 0rem left -2rem;
           }
       }
@@ -70,5 +73,4 @@ section#hero{
       }
       
   }
-
 }

@@ -12,7 +12,12 @@ section#comprar {
               padding: 0;
   
               .purple-light{
-                  height: 5.5rem;
+                  height: 6rem;
+                  z-index: 2;
+              }
+
+              .img{
+                  z-index: 0;
               }
           }
   
@@ -59,13 +64,13 @@ section#comprar {
               padding: 0;
   
               .purple-light{
-                  height: 6rem;
+                  height: 7rem;
                   z-index: 2;
               }
   
               .img{
                   max-height: 200px;
-                  z-index: 1;
+                  z-index: 0;
               }
   
               .bigger{
