@@ -20,8 +20,8 @@ O projeto ainda está em desenvolvimento e possivelmente precisará de ajustes d
 As próximas atualizações serão:
 - [x] Responsividade para dispositivos mobile
 - [x] Adição de animações de scroll
-- [] Desenvolvimento de animações para chamar atenção ao produto.
-- [] Revisão dos textos
+- [ ] Desenvolvimento de animações para chamar atenção ao produto.
+- [ ] Revisão dos textos
 
 
 ### Desenvolvedor
