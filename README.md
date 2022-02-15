@@ -9,7 +9,7 @@
 
 ### Visualize o projeto
 
-![Clique aqui para visualizar o projeto](https://paulo-fs.github.io/beautyGummy-landingPage/).
+[Clique aqui para visualizar o projeto](https://paulo-fs.github.io/beautyGummy-landingPage/).
 <!-- <a href="https://paulo-fs.github.io/beautyGummy-landingPage/" target="_blank">Clique aqui para visualizar o projeto</a> -->
 
 
