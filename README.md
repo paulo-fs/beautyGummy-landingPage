@@ -1,6 +1,5 @@
 # Harmonize Beauty Gummy
 
-![GitHub repo size](https://img.shields.io/github/repo-size/paulo-fs/beautyGummy-landingPage?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/paulo-fs/beautyGummy-landingPage?style=for-the-badge)
 
 ![Imagem de apresentação da landingpage Harmonize Beauty Gummy](https://github.com/paulo-fs/beautyGummy-landingPage/blob/main/capa-readme.jpg)
@@ -10,8 +9,8 @@
 
 ### Visualize o projeto
 
-<!-- [Clique aqui para visualizar o projeto](https://paulo-fs.github.io/beautyGummy-landingPage/). -->
-<a href="https://paulo-fs.github.io/beautyGummy-landingPage/" target="_blank">Clique aqui para visualizar o projeto</a>
+![Clique aqui para visualizar o projeto](https://paulo-fs.github.io/beautyGummy-landingPage/).
+<!-- <a href="https://paulo-fs.github.io/beautyGummy-landingPage/" target="_blank">Clique aqui para visualizar o projeto</a> -->
 
 
 ### Ajustes e melhorias
