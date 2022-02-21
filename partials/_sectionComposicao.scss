@@ -30,14 +30,54 @@ section#composicao{
           background-position: top -9rem left -3rem;
       }
 
+    .bloco-comp{
+        display: none;
+    }
+
+    .tabela-nutricional{
+        max-width: 100%;
+
+        .img{
+            display: none;
+            width: 4rem;
+            height: 60rem;
+            background-size: contain;
+            background-color: red;
+        }
+
+        img{
+            width: 100%;
+        }
+    }
+
   }
   //responsive end
 
+  .tabela-nutricional{
+    max-width: 100%;
+
+      .img{
+          display: none;
+          width: 20rem;
+          height: 30rem;
+          background-image: url(img/tabela-nutricional.jpg);
+          background-repeat: no-repeat;
+          background-size: contain;
+      }
+      
+      img{
+          width: 100%;          
+      }
+      
+
+  }
 
   .bloco-comp{
       display: flex;
       flex-direction: column;
       gap: 24px;
+      
+      display: none;
 
       .bloco-comp-item{
           display: flex;
